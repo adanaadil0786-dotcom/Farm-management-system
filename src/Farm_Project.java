@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 public class Farm_Project {
     public static void main(String[] args) {
         System.out.println("Welcome to Farm Project");
-        Login l = new Login(1, "adan", "123", "employee");
+        Login l = new Login(1, "adan", "123", "admin");
         l.login();
 
 
@@ -64,7 +64,20 @@ public class Farm_Project {
         } catch (SQLException e) {
             System.out.println("Database operation failed!");
             e.printStackTrace();
+
         }
+        Inventory inventory = new Inventory(0,"Store","General",0,0);
+
+        Inventory item1 = new Inventory(1,"Urea","Fertilizer",10,500);
+        Inventory item2 = new Inventory(2,"Seeds","Crop",50,200);
+
+        inventory.addItem(item1);
+        inventory.addItem(item2);
+
+        inventory.displayInventory();
+        inventory.displayInventory();
+
+        inventory.deleteItem(1);
 
 
 }}

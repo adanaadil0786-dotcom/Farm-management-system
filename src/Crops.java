@@ -1,88 +1,42 @@
-import java.util.Scanner;
+public class Crops {
 
-public class Crops
-{
-    int cropId;
+    private int cropId;
+    private String cropName;
+    private String season;
+    private int price;
+    private int quantity;
+    private String plantDate;
+    private String harvestDate;
 
-    public int getCropId() {
-        return cropId;
-    }
+    public Crops(int cropId, String cropName,
+                String season, int price,
+                int quantity,
+                String plantDate,
+                String harvestDate) {
 
-    public void setCropId(int cropId) {
         this.cropId = cropId;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public Crops(int cropId, String cropname, String season, int price, int quantity, int profit) {
-        this.cropId = cropId;
-        this.cropname = cropname;
+        this.cropName = cropName;
         this.season = season;
         this.price = price;
         this.quantity = quantity;
-        this.profit = profit;
+        this.plantDate = plantDate;
+        this.harvestDate = harvestDate;
     }
 
-    public String getCropname() {
-        return cropname;
+    public double calculateRevenue() {
+        return price * quantity;
     }
 
-    public void setCropname(String cropname) {
-        this.cropname = cropname;
+    public void addCrop() {
+        System.out.println("Crop added successfully.");
     }
 
-    public String getSeason() {
-        return season;
+    public void updateCrop() {
+        System.out.println("Crop updated successfully.");
+    }
+    public void deleteCrop() {
+        System.out.println("Crop deleted successfully.");
+
     }
 
-    public void setSeason(String season) {
-        this.season = season;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    private int getProfit() {
-        return profit;
-    }
-
-    private void setProfit(int profit) {
-        this.profit = profit;
-    }
-
-    String cropname;
-    String season;
-    int price;
-    int quantity;
-    int profit;
-    void addcrops(){
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter crop name: ");
-        cropname = input.nextLine();
-    }
-    void updatecrops() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter season: ");
-        season = input.nextLine();
-        System.out.print("Enter price: ");
-        price = input.nextInt();
-    }
-    double calculateProfit() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter quantity: ");
-        quantity = input.nextInt();
-        profit = price * quantity;
-        return profit;
-    }}
-
+}
