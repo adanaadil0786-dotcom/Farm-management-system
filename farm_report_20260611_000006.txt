@@ -1,0 +1,40 @@
+════════════════════════════════════════════════════════════
+      SMART FARM MANAGEMENT SYSTEM — FULL REPORT
+      Generated: 2026-06-11 00:00:06
+════════════════════════════════════════════════════════════
+
+[SECTION 1] REGISTERED FARMERS  (2)
+────────────────────────────────────────────────────────────
+  ID: 1, Name: Ali Hassan, Phone: 0300-1234567, Address: Lahore
+  ID: 2, Name: Bilal Ahmed, Phone: 0312-9876543, Address: Faisalabad
+
+[SECTION 2] ANIMAL STOCK  (3 types)
+────────────────────────────────────────────────────────────
+  class AnimalStock | Stock: 12 | Min Level: 3 | Buy: $80000.0 | Sell: $120000.0
+  class AnimalStock | Stock: 2 | Min Level: 5 | Buy: $8000.0 | Sell: $14000.0  ⚠ LOW STOCK
+  *** LOW STOCK ALERT: Goat — only 2 remaining ***
+  class AnimalStock | Stock: 18 | Min Level: 4 | Buy: $15000.0 | Sell: $25000.0
+
+  Total Input Cost    : $1246000.00
+  Potential Revenue   : $1918000.00
+  Projected Profit    : $672000.00
+
+[SECTION 3] INVENTORY ITEMS  (4 items)
+────────────────────────────────────────────────────────────
+  1    | Wheat Seeds          | SEEDS        | Qty: 50    | $1200.00
+  2    | Urea Fertilizer      | FERTILIZERS  | Qty: 30    | $800.00
+  3    | Pesticide A          | PESTICIDES   | Qty: 7     | $2500.00
+  4    | Animal Feed          | FEED         | Qty: 90    | $450.00
+
+  Total Inventory Value: $142000.00
+
+[SECTION 4] FINANCIAL SUMMARY
+────────────────────────────────────────────────────────────
+  Animal Stock Cost     : $1246000.00
+  Inventory Value       : $142000.00
+  Total Investment      : $1388000.00
+  Projected Animal Profit: $672000.00
+
+════════════════════════════════════════════════════════════
+  END OF REPORT
+════════════════════════════════════════════════════════════

@@ -1,6 +1,7 @@
-
 public enum ItemCategory {
     SEEDS,
     FERTILIZERS,
-    PESTICIDES
+    PESTICIDES,
+    EQUIPMENT,
+    FEED
 }

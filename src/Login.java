@@ -1,42 +1,32 @@
-import java.util.Scanner;
-
 public class Login {
 
-    private int userId;
+    private int    userId;
     private String username;
     private String password;
-    private String role;
+    private String role;   // "FARMER" or "MANAGER"
 
-    public Login(int userID, String username, String password, String role) {
-        this.userId = userID;
+    public Login(int userId, String username, String password, String role) {
+        this.userId   = userId;
         this.username = username;
         this.password = password;
-        this.role = role;
+        this.role     = role.toUpperCase();
     }
 
-    void login() {
-
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter username: ");
-        String enteredUsername = input.nextLine();
-
-        System.out.print("Enter password: ");
-        String enteredPassword = input.nextLine();
-
-        if (enteredUsername.equals(username)
-                && enteredPassword.equals(password)) {
-
-            System.out.println("Login Successful!");
-            System.out.println("Welcome " + role);
-
-        } else {
-
-            System.out.println("Invalid Username or Password");
+    /**
+     * Validates credentials and returns the role string if valid, null otherwise.
+     */
+    public String authenticate(String enteredUsername, String enteredPassword) {
+        if (this.username.equals(enteredUsername) && this.password.equals(enteredPassword)) {
+            return role;
         }
+        return null;
     }
 
-    void logout() {
-        System.out.println("Logout Successful!");
-    }
+    public boolean isManager() { return "MANAGER".equals(role); }
+    public boolean isFarmer()  { return "FARMER".equals(role);  }
+
+    // Getters
+    public int    getUserId()   { return userId; }
+    public String getUsername() { return username; }
+    public String getRole()     { return role; }
 }

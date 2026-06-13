@@ -1,0 +1,15 @@
+[LOG]: New Farmer Action Registered -> ID: 1, Name: Hamid, Address: isb
+[LOG]: New Farmer Action Registered -> ID: 2, Name: Ahmed, Address: lhr
+[LOG]: New Farmer Action Registered -> ID: 3, Name: Asim, Phone: 0388-63527829, Address: thg
+[2026-06-11 10:34:56] Farmer added: ID: 2, Name: Zahid, Phone: 0300-8847763, Address: lahore
+[2026-06-11 10:40:55] Inventory item added: Wheat Seeds
+[2026-06-11 10:43:06] Inventory item added: urea
+[2026-06-11 10:44:03] Inventory item updated: urea
+[2026-06-11 10:44:25] Inventory item updated: urea
+[2026-06-11 10:47:26] Animal added: class AnimalStock | Stock: 50 | Min Level: 10 | Buy: $40000.0 | Sell: $500000.0
+[2026-06-11 10:50:08] Crop deleted: ID 3
+[2026-06-11 10:50:15] Crop deleted: ID 2
+[2026-06-11 10:50:20] Crop deleted: ID 1
+[2026-06-11 10:50:22] Crop added: ID: 1 | Crop: Wheat | Season: Winter | Price: $60 | Qty: 2000 | Planted: 2025-11-01 | Harvest: 2026-04-15 | Revenue: $120000.00
+[2026-06-11 10:50:57] Crop added: ID: 2 | Crop: rice | Season: summer | Price: $70 | Qty: 20000 | Planted: 2025-11-01 | Harvest: 2026-04-15 | Revenue: $1400000.00
+[2026-06-11 12:51:40] Animal added: class AnimalStock | Stock: 12 | Min Level: 1 | Buy: $12556.0 | Sell: $16666.0

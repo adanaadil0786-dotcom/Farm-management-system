@@ -1,3 +1,4 @@
+
 public class Animals{
     public String getAnimalname() {
         return animalname;
@@ -54,3 +55,5 @@ public class Animals{
     String health_status;
     String weight;
 }
+
+

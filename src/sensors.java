@@ -1,49 +1,45 @@
-class sensors{
-    int sensorId;
+public class sensors {
 
-    public sensors(int sensorId, String sensortype, int value, String status) {
-        this.sensorId = sensorId;
-        this.sensortype = sensortype;
-        this.value = value;
-        this.status = status;
+    private int    sensorId;
+    private String sensorType;
+    private int    value;
+    private String status;
+
+    public sensors(int sensorId, String sensorType) {
+        this.sensorId   = sensorId;
+        this.sensorType = sensorType;
+        this.value      = 0;
+        this.status     = "Idle";
     }
 
-    public sensors(int sensorId, int value, String status, String sensortype) {
-        this.sensorId = sensorId;
-        this.value = value;
-        this.status = status;
-        this.sensortype = sensortype;
+    public sensors(int sensorId, String sensorType, int value, String status) {
+        this.sensorId   = sensorId;
+        this.sensorType = sensorType;
+        this.value      = value;
+        this.status     = status;
     }
 
-    String sensortype;
-    int value;
-    String status;
-    sensors(int sensorId, String sensortype) {
-
-        this.sensorId = sensorId;
-        this.sensortype = sensortype;
+    public void generateReading() {
+        value  = (int)(20 + Math.random() * 80);
+        status = value > 50 ? "High" : "Normal";
     }
 
-    // Generate reading
-    void generateReading() {
-
-        value = (int)(20 + Math.random() * 80);
-
-        if(value > 50) {
-            status = "High";
-        }
-        else {
-            status = "Normal";
-        }
+    public void displayData() {
+        System.out.println("Sensor ID: "   + sensorId);
+        System.out.println("Sensor Type: " + sensorType);
+        System.out.println("Value: "       + value);
+        System.out.println("Status: "      + status);
     }
 
-    // Display data
-    void displayData() {
+    // Getters
+    public int    getSensorId()   { return sensorId; }
+    public String getSensorType() { return sensorType; }
+    public int    getValue()      { return value; }
+    public String getStatus()     { return status; }
 
-        System.out.println("Sensor ID: " + sensorId);
-        System.out.println("Sensor Type: " + sensortype);
-        System.out.println("Value: " + value);
-        System.out.println("Status: " + status);
-    }
+    // Setters
+    public void setSensorId(int id)         { this.sensorId = id; }
+    public void setSensorType(String type)  { this.sensorType = type; }
+    public void setValue(int value)         { this.value = value; }
+    public void setStatus(String status)    { this.status = status; }
 }
-

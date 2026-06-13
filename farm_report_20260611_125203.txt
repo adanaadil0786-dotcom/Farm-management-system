@@ -1,0 +1,49 @@
+════════════════════════════════════════════════════════════
+      SMART FARM MANAGEMENT SYSTEM — FULL REPORT
+      Generated: 2026-06-11 12:52:03
+════════════════════════════════════════════════════════════
+
+[SECTION 1] REGISTERED FARMERS  (2)
+────────────────────────────────────────────────────────────
+  ID: 1, Name: Ali Hassan, Phone: 0300-1234567, Address: Lahore
+  ID: 2, Name: Bilal Ahmed, Phone: 0312-9876543, Address: Faisalabad
+
+[SECTION 2] ANIMAL STOCK  (4 types)
+────────────────────────────────────────────────────────────
+  class AnimalStock | Stock: 12 | Min Level: 3 | Buy: $80000.0 | Sell: $120000.0
+  class AnimalStock | Stock: 2 | Min Level: 5 | Buy: $8000.0 | Sell: $14000.0  ⚠ LOW STOCK
+  *** LOW STOCK ALERT: Goat — only 2 remaining ***
+  class AnimalStock | Stock: 18 | Min Level: 4 | Buy: $15000.0 | Sell: $25000.0
+  class AnimalStock | Stock: 12 | Min Level: 1 | Buy: $12556.0 | Sell: $16666.0
+
+  Total Input Cost    : $1396672.00
+  Potential Revenue   : $2117992.00
+  Projected Profit    : $721320.00
+
+[SECTION 3] CROPS (3 types)
+ID: 1 | Crop: Wheat | Season: Winter | Price: $60 | Qty: 2000 | Planted: 2025-11-01 | Harvest: 2026-04-15 | Revenue: $120000.00
+ID: 2 | Crop: Rice | Season: Summer | Price: $90 | Qty: 1500 | Planted: 2026-05-01 | Harvest: 2026-09-20 | Revenue: $135000.00
+ID: 3 | Crop: Maize | Season: Summer | Price: $45 | Qty: 1200 | Planted: 2026-04-10 | Harvest: 2026-08-01 | Revenue: $54000.00
+
+[SECTION 4] INVENTORY ITEMS  (4 items)
+────────────────────────────────────────────────────────────
+  1    | Wheat Seeds          | SEEDS        | Qty: 50    | $1200.00
+  2    | Urea Fertilizer      | FERTILIZERS  | Qty: 30    | $800.00
+  3    | Pesticide A          | PESTICIDES   | Qty: 7     | $2500.00
+  4    | Animal Feed          | FEED         | Qty: 90    | $450.00
+
+  Total Inventory Value: $142000.00
+
+[SECTION 5] FINANCIAL SUMMARY
+────────────────────────────────────────────────────────────
+  Animal Stock Cost     : $1396672.00
+  Inventory Value       : $142000.00
+  Total Investment      : $1538672.00
+  Animal Revenue        : $2117992.00
+  Crop Revenue          : $309000.00
+  Total Revenue         : $2426992.00
+  Net Profit            : $888320.00
+
+════════════════════════════════════════════════════════════
+  END OF REPORT
+════════════════════════════════════════════════════════════
